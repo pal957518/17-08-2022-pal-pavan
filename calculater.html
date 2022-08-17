@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    input{
+        height: 30px;
+        width:60px;
+        background-color:whitesmoke;
+    }
+        #clear{
+            width: 40px;
+        }
+        .formstyle {
+            width: 200px;
+            height: 380px;
+            margin: auto;
+            border:2px solid rgb(20, 230, 83);
+        }
+        #answer{
+            height: 40px;
+            width: 150px;
+        }
+</style>  
+<title><h2>calculator</h2></title>
+</head>
+    
+<body>
+    <center>
+        <h2>calculator</h2>
+    <div class="formstyle" >
+        <form name="forms"><br>
+            <input type="text" name="answer" id="answer"> <br><br>
+            <input type="button" value=" 1 "onclick="forms.answer.value+='1'">
+            <input type="button" value=" 2 "onclick="forms.answer.value+='2'">
+            <input type="button" value=" 3 "onclick="forms.answer.value+='3'">
+            <br><br>
+
+            <input type="button" value=" 4 "onclick="forms.answer.value+='4'">
+            <input type="button" value=" 5 "onclick="forms.answer.value+='5'">
+            <input type="button" value=" 6 "onclick="forms.answer.value+='6'">
+            <br><br>
+
+            <input type="button" value=" 7 "onclick="forms.answer.value+='7'">
+            <input type="button" value=" 8 "onclick="forms.answer.value+='8'">
+            <input type="button" value=" 9 "onclick="forms.answer.value+='9'">
+            <br><br>
+
+            <input type="button" value=" + "onclick="forms.answer.value+='+'">
+            <input type="button" value=" - "onclick="forms.answer.value+='-'">
+            <input type="button" value=" *"onclick="forms.answer.value+='*'">
+            <br><br>
+
+            <input type="button" value=" / "onclick="forms.answer.value+='/'">
+            <input type="button" value=" 0 "onclick="forms.answer.value+='0'">
+            <input type="button" value=" = "onclick="forms.answer.value = eval (forms.answer.value) ">
+            <br><br>
+
+            <input type="reset" value="clear" onclick="clear all">
+        </center>
+    </form>
+    </div>
+</body>
+</html>
